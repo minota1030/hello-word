@@ -1,0 +1,24 @@
+entero contador, edad, contador_mayor, contador_menor
+inicio
+	contador <- 1
+	contador_mayor <- 0
+	contador_menor <- 0
+	mientras contador <= 10 haga
+			escriba "DE EDAD # ",contador, " "
+			lea edad 
+			si edad >= 18 entonces
+				contador_mayor <- contador_mayor + 1
+			sino 
+				contador_menor <- contador_menor + 1	
+			fin si
+			llamar nueva_linea
+			
+			
+		contador <- contador + 1
+	fin mientras
+	escriba "MAYORES DE EDAD SON ",contador_mayor
+	llamar nueva_linea
+	escriba "LOS MENORES  DE EDAD SON ",contador_menor
+	llamar nueva_linea
+	escriba "FIN DEL CICLO " 
+fin

@@ -1,0 +1,12 @@
+entero numero
+inicio
+	numero <- 2
+	mientras numero <= 50 haga
+	si ( (numero mod 2) = 0 ) entonces
+	llamar nueva_linea
+		escriba "NUMERO ES; " , numero
+		numero <- numero + 2
+	fin si
+	fin mientras
+fin
+ 

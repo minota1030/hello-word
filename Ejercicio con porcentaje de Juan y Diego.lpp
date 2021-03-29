@@ -1,0 +1,24 @@
+cadena [15]nombres
+entero contador_personas, k_nombres, k_diego, k_juan
+inicio
+	contador_personas <-1
+	k_diego<-0
+	k_juan <-0
+	mientras contador_personas <= 5 haga
+		escriba contador_personas, " DE NOMBRE"
+		lea nombre
+		contador_personas <- contador_personas + 1
+		SI nombres = "Diego" entonces
+		k_diego <- k_diego + 1
+		Fin si	
+		SI nombres = "Juan" entonces
+		k_juan <- k_juan + 1
+	fin si
+	fin mientras
+	
+	escriba "HAY ", k_diego, " Diegos en la lista"
+	porcentaje <- (k_juan *100) / 10
+	llamar nueva_linea
+	escriba "HAY", porcentaje , "# de Juanes"
+fin
+

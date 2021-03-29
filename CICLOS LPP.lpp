@@ -1,0 +1,20 @@
+entero numero
+inicio
+	numero <- 100
+	mientras numero <= 150 haga
+	llamar nueva_linea
+		escriba "NUMERO " , numero
+		numero <- numero + 1
+	fin mientras
+fin
+entero contador, numero
+inicio
+escriba "digite su numero"
+lea numero
+contador <- 1
+	mientras contador <= numero haga
+	llamar nueva_linea
+	escriba "numero ",contador
+	contador <- contador + 1
+fin mientras
+fin

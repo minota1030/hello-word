@@ -1,0 +1,10 @@
+entero numero
+inicio
+	numero <- 2
+	mientras numero <= 50 haga
+	llamar nueva_linea
+		escriba "NUMERO ES " , numero
+		numero <- numero + 2
+	fin mientras
+fin
+ 

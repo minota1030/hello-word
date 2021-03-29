@@ -1,0 +1,13 @@
+entero numero, k, factorial
+
+inicio
+	k <- 1
+	factorial <- 1
+	escriba "DE UN NUMERO: "
+	lea numero
+		mientras k <= numero haga
+			factorial <- factorial * k
+			k <- k +1
+		fin mientras
+	escriba "EL RESULTADO ES: " , factorial
+fin

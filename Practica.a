@@ -1,0 +1,8 @@
+public class Errores 
+{
+      public static void main (String e[])
+      System.out.println("HolaMundo ");
+      }
+      
+   }
+}

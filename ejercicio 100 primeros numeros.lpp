@@ -1,0 +1,11 @@
+entero contador, suma
+inicio
+	contador <-1 
+	suma <- 0
+	mientras contador <= 101 haga
+	suma <- suma + contador
+	contador <- contador + 1
+	fin mientras
+	escriba "La suma de los 100 primeros numeros "
+	escriba suma
+fin

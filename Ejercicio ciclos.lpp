@@ -1,0 +1,12 @@
+entero contador
+inicio
+	contador <- 1
+	mientras contador <50 haga
+		llamar nueva_linea
+		escriba "Samy ",contador
+		contador <- contador + 1
+	fin mientras
+	escriba "Samy SALIO DEL CICLO CON SMITH"
+	
+fin
+	

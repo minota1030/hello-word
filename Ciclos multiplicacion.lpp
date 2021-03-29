@@ -1,0 +1,12 @@
+entero numero, par
+inicio
+	numero <- 1
+	mientras numero <= 25 haga
+		par <- numero * 2
+		llamar nueva_linea
+		escriba "NUMERO ES; " , par
+		
+		numero <- numero + 1
+	fin mientras
+fin
+ 

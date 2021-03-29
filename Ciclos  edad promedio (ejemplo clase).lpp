@@ -1,0 +1,34 @@
+entero contador, edad, suma
+real promedio
+inicio
+	contador <- 1
+	suma <-0
+	mientras contador <= 10 haga
+		escriba "DE EDAD # ",contador, " "
+		lea edad 
+		suma <- suma + edad
+		contador <- contador + 1
+	fin mientras
+	promedio <- suma / 10
+	llamar nueva_linea
+	escriba "EL PROMEDIO DE EDADES ES ", promedio 
+fin
+pedir n edades por teclado e imprimir las siguientes:
+cuantos son mayores de edad
+el promedio de los menores de edad
+
+entero n_edades, menor, mayor
+real promedio
+	n_edades
+	suma <-0
+	mientras n_edades <=10 haga
+		escriba "Edad ", contador, " "
+		lea edad
+		suma <- suma + edad
+		n_edades <- n_edades + 1
+	fin mientras
+	promedio <- suma / 10
+	llamar nueva_linea
+	escriba "
+	
+	

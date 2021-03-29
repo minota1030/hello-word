@@ -1,0 +1,61 @@
+entero contador, voto, contador_samy,contador_sary,contador_dany,contador_lau
+
+inicio
+	contador <- 0
+	voto <- 0
+	contador_samy  <- 0
+	contador_sary <- 0
+	contador_dany <- 0
+	contador_lau <- 0
+	llamar nueva_linea
+	escriba "REINADO DE ESTUDIANTES "
+	
+	mientras contador <= 10 haga
+	     llamar nueva_linea
+		escriba "_______________________ "
+		llamar nueva_linea
+		escriba "LISTA REINAS "
+		llamar nueva_linea
+		escriba "_______________________ "
+		llamar nueva_linea
+		escriba "____ 1 ..... SAMY     ___ "
+		llamar nueva_linea 
+		escriba "____ 2 ..... SARY     ___ "
+		llamar nueva_linea
+		escriba "____ 3 ..... LAURA    ___ "
+		llamar nueva_linea 
+		escriba "____ 4 ..... DANIELA  ___ "
+		llamar nueva_linea
+		escriba "____ ELIJA OPCION     ___ "
+		
+		llamar nueva_linea
+		escriba "_________________________ "
+		lea voto
+		si voto=1 entonces
+				contador_samy<-contador_samy + 1
+		fin si
+		si voto=2 entonces
+				contador_sary<-contador_sary + 1
+		fin si
+		4si voto=3 entonces
+				contador_dany<-contador_dany + 1
+		fin si
+		si voto=4 entonces
+				contador_lau <- contador_lau + 1
+		fin si
+		
+		contador <- contador + 1
+	fin mientras
+	llamar nueva_linea
+	escriba "_ TOTAL VOTACION _  "	
+	llamar nueva_linea
+	escriba "_ 1 .. SAMY   _ ", contador_samy
+	llamar nueva_linea
+	escriba "_ 2 .. SARY   _ ", contador_sary
+	llamar nueva_linea
+	escriba "_ 3 .. DANY   _ ", contador_dany
+	llamar nueva_linea
+	escriba "_ 4 .. LAU RA   _ ", contador_lau
+	llamar nueva_linea
+
+fin

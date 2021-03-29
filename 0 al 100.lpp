@@ -1,0 +1,10 @@
+entero contador1
+inicio
+c <- 0
+mientras
+Borrar_pantalla( )
+MIENTRAS c < 101 haga
+Escriba c
+c <- c + 1
+fin mientras
+fin

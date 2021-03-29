@@ -1,0 +1,13 @@
+entero numero, k, producto
+inicio
+	k <- 1
+	escriba "DE UN NUMERO: "
+	lea numero
+		mientras k <= 10 haga
+			llamar nueva_linea
+			producto <- numero * k
+			escriba k, " * " , k, " = ", producto
+			
+			k <- k +1
+	fin mientras
+fin
