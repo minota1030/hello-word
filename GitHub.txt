@@ -1,0 +1,89 @@
+//Java Class
+
+//CALCULAR LA SUMA SIGUIENTE 100 + 98 + 96 + 94 +... + 0 en este orden
+
+ public void suma() {
+        boolean bandera = true;   //false = resta , true = suma
+        int sumatoria = 0;
+        for (int i = 100; i > 0; i = i - 2) {
+            if (bandera == true) {
+                sumatoria = sumatoria + i;
+                bandera = false;
+            } else {
+                sumatoria = sumatoria - i;
+                bandera = true;
+            }
+            System.out.println("valor de i:" + 1 + "sumatoria:" + sumatoria);
+
+        }
+    }
+//Java Main Class
+//En este caso use primero
+
+taller_uno t1 = new taller_uno();
+
+//luego mande a llamar lo que necesitaba (En este caso mande a llamar lo que estaba en Java Class)
+//Usas Run File y el ya te imprime lo que esta a tu necesidad.
+
+t1.suma();
+	
+----------------------------------------------------------------------------------------------------
+
+//Calcular el promedio de hombres y mujeres de todo un grupo de alumnos
+
+    public void promediohm() {
+        int cantidad_hombres = 41;
+        int cantidad_mujeres = 9;
+        int total_de_alumnos = cantidad_hombres + cantidad_mujeres;
+
+        double promedio_hombres = (cantidad_hombres) / (total_de_alumnos + 0.0);
+        double promedio_mujeres = (cantidad_mujeres) / (total_de_alumnos + 0.0);
+
+        System.out.println("El total de promedio de hombres es " + promedio_hombres);
+        System.out.println("El total de promedio de mujeres es " + promedio_mujeres);
+
+//Java Main Class
+//Comentas  el t1.suma(); y agregas 
+ t1.promediohm();
+//Alli ya te te saldra en consola.
+----------------------------------------------------------------------------------------------------
+//leer los 250.000 votos otorgados a los 3  candidatos a gobernardor e imprimir
+    //el numero del cantidato gandor y su cantidad de votos
+    }
+
+    public void voticos() {
+        int votos_c1 = 120000;
+        int votos_c2 = 90000;
+        int votos_c3 = 40000;
+
+        if (votos_c1 > votos_c2 && votos_c1 > votos_c3) {
+            System.out.println("Ganardor C1");
+        } else if (votos_c2 > votos_c1 && votos_c2 > votos_c3) {
+            System.out.println("Ganardor C2");
+        } else if (votos_c3 > votos_c1 && votos_c3 > votos_c2) {
+            System.out.println("Ganador C3");
+        }
+
+//Java Main Class
+//Comentas  el  t1.promediohm(); y agregas 
+t1.voticos();
+//Alli ya te te saldra en consola.
+
+----------------------------------------------------------------------------------------------------
+public void punto_ultimoDigitoCedula() {
+
+        int numero = 0;
+        int residuo = 0;
+
+        System.out.println(
+                "De un numero de la cedula");
+        numero = teclado.nextInt();
+        residuo = numero % 10;
+
+        System.out.println(
+                "EL ultimo dgito del numero de la cedula es " + residuo);
+
+    }
+//t2.ultimoDigitoCedula();
+
+----------------------------------------------------------------------------------------------------
