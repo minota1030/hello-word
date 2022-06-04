@@ -1,2 +1,1 @@
-# hello-word
-Nuevo :v  
+TRABAJOS QUE DEJABAN EN UNIMAYOR
