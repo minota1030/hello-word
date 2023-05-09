@@ -1,0 +1,869 @@
+entero contador, suma
+inicio
+	contador <-1 
+	suma <- 0
+	mientras contador <= 101 haga
+	suma <- suma + contador
+	contador <- contador + 1
+	fin mientras
+	escriba "La suma de los 100 primeros numeros "
+	escriba suma
+fin
+//EJERCICIO 1(DE NUEVO)
+
+import java.util.Scanner;
+class ejercicio1
+{
+       public static void main (String e[])
+       {
+       Scanner lea=new Scanner(System.in);
+       int contador=100;
+       int acu_suma=0;
+       
+       while (contador >= 0)
+       {
+       System.out.println(contador);
+       acu_suma = acu_suma + contador;
+       contador = contador - 2;      
+       
+       }
+       System.out.println("LA SUMA TOTAL ES  " +acu_suma);
+       
+    }
+}
+
+//EJERCICIO 1
+
+import java.util.Scanner;
+class Taller1
+ {
+  public static void main(String h[])
+   {
+   Scanner lea=new Scanner(System.in);
+   int contador=100,sum_n=0;
+   
+   while (contador>=0){
+   
+   System.out.println(contador);
+   sum_n=sum_n+contador;
+   
+   contador=contador-2;
+   
+   }
+   
+   System.out.println("la suma es  "+sum_n);
+   
+   
+   
+   }
+  } 
+
+//EJERCICIO 2
+
+import java.util.Scanner;
+class Taller2
+ {
+   public static void main(String h[])
+   {
+   
+   Scanner lea=new Scanner(System.in);
+   int contador=100,sum_n=0,contador2=98,rest,resta=0;
+   
+   while (contador>=0){
+   
+   System.out.println(contador);
+   sum_n=sum_n+contador;
+   
+   contador=contador-4;
+   }
+   
+    while (contador2>=0){ 
+   resta=resta+contador2;
+   
+   contador2=contador2-4;
+   }
+
+   rest=sum_n-resta;
+   System.out.println("la suma es y resta es  "+rest);
+   
+   
+   
+   }
+  } 
+
+//EJERCICIO 4
+
+import java.util.Scanner;
+class Taller4
+{
+ public static void main(String h[])
+ {
+ 
+ Scanner lea=new Scanner(System.in);
+ int contador=1,mes;
+  double dinero=1000,gan,cont_i=0;
+ 
+ System.out.println("INGRESE MES");
+ mes=lea.nextInt();
+ 
+ while (contador<=mes){
+ gan=dinero*0.02;
+ dinero=dinero+gan;
+ System.out.println(contador+" Dinero "+dinero);
+ 
+ 
+ 
+ cont_i=cont_i+gan;
+  contador=contador+1;
+ }
+ System.out.println("Ganancia "+cont_i);
+ 
+ 
+ 
+ 
+ 
+ }
+ 
+} 
+
+//EJERCICIO 5
+
+import java.util.Scanner;
+class Taller5
+{
+  public static void main(String h[])
+  {
+  
+  Scanner lea=new Scanner(System.in);
+  int contador=1,votos,candidato,cont_lopez=0,cont_santiago=0,cont_george=0;
+  
+  
+  
+  
+  while (contador<=3){
+  
+  System.out.println("_______CANDIDATOS DE LAS ELECCIONES_______");
+  System.out.println("_________________1.lopez__________");  
+  System.out.println("________________2.santiago_______");  
+  System.out.println("_________________3.george__________");  
+  System.out.println("____________________________________________");
+  candidato=lea.nextInt();
+  System.out.println("___LA CANTIDAD DE VOTOS POR CANDIDATO FUE___");
+  votos=lea.nextInt();
+  
+  if (candidato==1){
+  cont_lopez=cont_lopez+votos;
+  }
+  
+  if (candidato==2){
+  cont_santiago=cont_santiago+votos;
+  }  
+  
+  if (candidato==3){
+  cont_george=cont_george+votos;
+  }  
+  
+  
+  contador=contador+1;
+  }
+  
+  System.out.println("__CANTIDAD DE VOTOS POR CANDIDATO FUE__");
+   System.out.println("___LOPEZ___"+cont_lopez);
+   System.out.println("___SANTIAGO___"+cont_santiago);
+   System.out.println("___GEORGE___"+cont_george);
+   
+   if ((cont_lopez>cont_santiago) && (cont_lopez>cont_george)){
+   System.out.println("El nuevo gobernador es lopez "+cont_lopez);
+   }
+   
+   if ((cont_santiago>cont_george) && (cont_santiago>cont_lopez)){
+   System.out.println("El nuevo gobernador es santiago "+cont_santiago);
+   }
+   
+   if ((cont_george>cont_santiago) && (cont_george>cont_lopez)){
+   System.out.println("El nuevo gobernador es george "+cont_george);
+   }   
+
+      
+   
+  
+  
+  
+  
+  
+  }
+  
+}  
+
+//EJERCICIO 6
+
+import java.util.Scanner;
+class Taller6
+{
+ public static void main(String h[])
+  {
+  Scanner lea=new Scanner(System.in);
+  int contador=1;
+  float nota,promedio,prom_perdidos=0;
+  
+  while (contador<=50){
+  System.out.println("NOTA");
+  nota=lea.nextFloat();
+  
+  if (nota<=3.4){
+  prom_perdidos=prom_perdidos+nota; 
+  }
+  
+  contador=contador+1;
+  }
+  
+  promedio=prom_perdidos/50;
+  System.out.println("promedio de perdidos es "+promedio);
+  
+  
+  
+  }
+ } 
+
+//EJERCICIO 7
+
+import java.util.Scanner;
+class Taller7
+{ 
+ public static void main(String h[])
+ {
+ Scanner lea=new Scanner(System.in);
+ int numero,menor=99999,contador=1,numero1;
+ System.out.println("cantidad de numeros ");
+ numero1=lea.nextInt();
+ 
+ while (contador<=numero1){
+ System.out.println("de un numero ");
+ numero=lea.nextInt();
+ if (numero<menor){
+  menor=numero;
+ }
+ contador=contador+1;
+ }
+ System.out.println("el valor es "+menor);
+ 
+ }
+} 
+
+//EJERCICIO 8
+
+import java.util.Scanner;
+class Taller8
+ {
+  public static void main(String h[])
+  {
+  Scanner lea=new Scanner(System.in);
+  int numero,total,maximo=0,contador=1;
+  
+  System.out.println("De cantidad");  
+  total=lea.nextInt();
+  
+  while (contador<=total){
+  System.out.println("De un numero");
+  numero=lea.nextInt();
+  if(numero>maximo){
+  maximo=numero;
+  
+  }
+  
+  contador=contador+1;
+  }
+  System.out.println("El maximo de numero es "+maximo);
+  
+  
+  
+  }
+  
+ }
+
+//EJERCICIO 9
+
+import java.util.Scanner;
+class Taller9
+{
+ public static void main(String h[])
+ {
+ Scanner lea=new Scanner(System.in);
+ int cantidad,contador=1;
+ double mayor=0,nota,
+ 
+ String nombre;
+ 
+ System.out.println("Cantidad de alumnos");
+ cantidad=lea.nextInt();
+ 
+ 
+ 
+ 
+ while (contador<=cantidad){
+ 
+ System.out.println(contador+"  Estudiante");
+ System.out.println("Su nombre");
+ nombre=lea.next();
+ 
+
+ 
+ System.out.println("DE 3 NOTAS ");
+ nota=lea.nextDouble();
+ nota=lea.nextDouble();
+ nota=lea.nextDouble();
+ 
+ 
+ if (nota>mayor){
+ mayor=nota;
+ System.out.println("su nombre es "+nombre);
+ 
+ 
+ 
+     }
+ 
+ contador=contador+1;
+ }
+ 
+
+ System.out.println("la nota mayor es  "+mayor);
+ 
+ 
+ }
+ 
+} 
+
+//EJERCICIO 10
+
+import java.util.Scanner;
+class Taller10
+{ 
+ public static void main(String h[])
+  {
+  Scanner lea=new Scanner(System.in);
+  int contador=1,alumnos;
+  double nota,menor=99999,suma_not=0,media;
+  
+  
+  while (contador<=40){
+  System.out.println(contador+" Alumno 'nota'");
+  nota=lea.nextDouble();
+  
+  if (nota<menor){
+  menor=nota;
+  }
+  
+  suma_not=suma_not+nota;
+  
+  contador=contador+1;
+  }
+  System.out.println("La nota menor es "+menor);
+  media=suma_not/3;
+  System.out.println("La nota media es "+media);
+  
+  
+  }
+ } 
+
+//EJERCICIO 11
+
+import java.util.Scanner;
+class Taller11
+{ 
+ public static void main(String args[])
+ {
+ Scanner lea=new Scanner(System.in);
+ int contador=1,cont_h=0,cont_f=0,alumnos;
+ String s;
+ 
+ System.out.println("Cantidad de alumnos");
+ alumnos=lea.nextInt();
+ 
+ 
+ while (contador<=alumnos){
+ System.out.println("Marque F en caso de mujer y en caso de hombre H ");
+ s=lea.next();
+
+ if (s.equals("h")){
+ cont_h=cont_h+1;
+ }
+ 
+ if(s.equals("f")){ 
+ cont_f=cont_f+1;
+ }
+ 
+ 
+ 
+ contador=contador+1;
+ }
+ 
+ System.out.println(" hombres "+cont_h);
+ System.out.println(" mujeres "+cont_f);
+ }
+} 
+
+//EJERCICIO 12
+
+import java.util.Scanner;
+class Taller12
+ {
+  public static void main(String h[])
+  {
+  Scanner lea=new Scanner(System.in);
+  int contador=1,n,voto,cont_abs=0,cont_contr=0,cont_fav=0,porcentaje,porcentaje2,porcentaje3;
+  
+  System.out.println("Numero a encuestar CANTIDAD");
+  n=lea.nextInt();
+  
+   while (contador<=n){
+   
+   
+   
+   
+   System.out.println("________________________________________");
+   System.out.println("_________TRATADO DE LBRE COMERCIO________");
+   System.out.println("________________________________________");
+   System.out.println("_______________1.A FAVOR________________");
+   System.out.println("_______________2.EN CONTRA________________");
+   System.out.println("_______________3.SE ABSTIENE________________");
+   System.out.println("________________________________________");
+   System.out.println("________________________________________");   
+   
+   System.out.println("DIPUTADO");
+   System.out.println("Escoja opcion");
+   voto=lea.nextInt();
+   
+   if (voto==1){
+   cont_fav=cont_fav+1;
+   }
+   if (voto==2){
+   cont_contr=cont_contr+1;
+   }
+   if (voto==3){
+   cont_abs=cont_abs+1;
+   }
+
+   contador=contador+1;
+   }
+  porcentaje=(cont_fav*100)/n;
+  porcentaje2=(cont_contr*100)/n;
+  porcentaje3=(cont_abs*100)/n;
+  System.out.println("El "+porcentaje+" % a favor.");
+  System.out.println("El "+porcentaje2+" % en contra.");
+  System.out.println("El "+porcentaje3+" % se abstiene.");
+ 
+  }
+ } 
+
+//EJERCICIO 13
+
+import java.util.Scanner;
+class Taller13
+ {
+  public static void main(String h[])
+  {
+  Scanner lea=new Scanner(System.in);
+  int contador=1,n,opcion ,es_pri=0,es_sec=0,es_tec=0,es_pro=0,es_pos=0,porcentaje,porcentaje2,porcentaje3,porcentaje4,porcentaje5;
+  System.out.println("Personas que alcanzo a encuestar en el dia ");
+  n=lea.nextInt();
+  
+  while (contador<=n){
+  System.out.println("__________________________________________");
+  System.out.println("__Censo Nacional de Poblacion y Vivienda__");
+  System.out.println("__________________________________________");
+  System.out.println("__________ESTUDIOS ALCANZADOS_____________");
+  System.out.println("__________________________________________");
+  System.out.println("__1._____________Primaria__________________");
+  System.out.println("__2.____________Secundaria_________________");
+  System.out.println("__3.____________Carrera Tecnica____________");
+  System.out.println("__4._________Estudios Profesional__________");
+  System.out.println("__5.___________Estudios Posgrado___________");
+  System.out.println("__________________________________________");
+  System.out.println("__________________________________________");
+  
+  System.out.println("Escoger la opcion:");
+  opcion=lea.nextInt();
+  
+  if (opcion==1){
+  es_pri=es_pri+1;
+  }  
+  
+  if (opcion==2){
+  es_sec=es_sec+1;
+  }
+
+  if (opcion==3){
+  es_tec=es_tec+1;
+  }
+  
+  if (opcion==4){
+  es_pro=es_pro+1;
+  }
+  
+  if (opcion==5){
+  es_pos=es_pos+1;
+  }
+  
+  contador=contador+1;
+  }
+  porcentaje=(es_pri*100)/n;
+  porcentaje2=(es_sec*100)/n;
+  porcentaje3=(es_tec*100)/n;
+  porcentaje4=(es_pro*100)/n;
+  porcentaje5=(es_pos*100)/n;
+  System.out.println("primaria  "+porcentaje+" %");
+  System.out.println("Secundaria  "+porcentaje2+" %");
+  System.out.println("Carrera Tecnica  "+porcentaje3+" %");
+  System.out.println("Estudios Profesionales  "+porcentaje4+" %");
+  System.out.println("Estudios Posgrado  "+porcentaje5+" %");
+  
+  }
+ }
+ 
+//EJERCICIO 14
+
+import java.util.Scanner;
+
+public class ClaseMath14 {
+
+    public static void main(String[] args) {
+    
+    
+Scanner leer= new Scanner (System.in);
+float n1, n2;
+System.out.println("Ingrese el primer valor: ");
+n1 = leer.nextInt();
+System.out.println("Ingrese el segundo valor");
+n2 = leer.nextInt();
+n2 = (float) Math.pow(n2,-1);
+
+float resultado = n1 * n2;
+
+System.out.println(" el resultado de la division es: " + resultado);
+
+    }
+
+}
+
+//EJERCICIO 3
+
+import java.util.Scanner;
+class Taller3amimanera
+{ 
+ public static void main(String args[])
+ {
+ Scanner lea=new Scanner(System.in);
+ int contador=1,cont_h=0,edad,cont_f=0,alumnos;
+ double cont_eh=0,cont_em=0,promediog=0.0 ;
+ String s;
+ 
+ System.out.println("Cantidad de alumnos");
+ alumnos=lea.nextInt();
+ 
+ while (contador<=alumnos){
+ System.out.println("M O F");
+ s=lea.next();
+ System.out.println("edad");
+ edad=lea.nextInt();
+ 
+
+ if (s.equals("m")){
+ cont_eh=cont_eh+edad;
+ cont_h=cont_h+1;
+ 
+ }
+ 
+ if(s.equals("f")){
+ cont_em=cont_em+edad;
+ cont_f=cont_f+1;
+ }
+ 
+ contador=contador+1;
+ }
+  promediog=(cont_eh+cont_em)/alumnos;
+   cont_em=cont_em/cont_f;
+cont_eh=cont_eh/cont_h;
+
+//important:para que no de error por operaciones invalidas por cero hay que poner el mismo contador ya sea en el promedio que saques o porcentaje que quieras sacar
+
+ System.out.println("Promedio edad de hombres "+cont_eh);
+
+ System.out.println("Promedio edad de mujeres "+cont_em);
+ System.out.println("Promedio grupal "+promediog);
+
+ }
+} 
+
+//EJERCICIO 20
+
+import java.util.Scanner;
+class Taller20
+ {
+   public static void main(String h[])
+   {
+    Scanner lea=new Scanner(System.in);
+    int a,b,c,d,n,Aa,Bb,Cc,Dd;
+    System.out.println("DE UN NUMERO DE 4 CIFRAS");
+    n=lea.nextInt();
+    a=n/1000;
+    b=n/100;
+    c=n/10;
+    d=n/1;
+    
+    System.out.println("Digite 1  "+a);
+    System.out.println("Digite 2  "+b);
+    System.out.println("Digite 3  "+c);
+    System.out.println("Digite 4  "+d);
+    System.out.println("_______________________________");
+    
+    Aa=a % 10;
+    System.out.println("Digite 1  "+Aa);
+    Bb=b % 10;
+    System.out.println("Digite 2  "+Bb);
+    Cc=c % 10;
+    System.out.println("Digite 3  "+Cc);
+    Dd=d % 10;
+    System.out.println("Digite 4  "+Dd); 
+    
+    System.out.println("_______________________________"); 
+    
+    if ((Aa==Dd) && (Bb==Cc)){
+    System.out.println("Los numeros son capicuas ");
+    }          
+    else
+    {
+     System.out.println("No son capicuas");
+    }
+  
+   
+   }
+   
+   
+ 
+ }
+  
+//EJERCICIO 21
+
+import java.util.Scanner;
+class Taller21
+ {
+   public static void main(String h[])
+   {
+    Scanner lea=new Scanner(System.in);
+    int a,b,c,d,n,Aa,Bb,Cc,Dd,contador=1,fin;
+    
+    System.out.println("Fin del ciclo");
+    fin=lea.nextInt();
+   
+    while (contador<=fin){
+    
+    
+    System.out.println("DE UN NUMERO DE 4 CIFRAS");
+    n=lea.nextInt();
+    a=n/1000;
+    b=n/100;
+    c=n/10;
+    d=n/1;
+    
+    System.out.println("Digite 1  "+a);
+    System.out.println("Digite 2  "+b);
+    System.out.println("Digite 3  "+c);
+    System.out.println("Digite 4  "+d);
+    System.out.println("_______________________________");
+    
+    Aa=a % 10;
+    System.out.println("Digite 1  "+Aa);
+    Bb=b % 10;
+    System.out.println("Digite 2  "+Bb);
+    Cc=c % 10;
+    System.out.println("Digite 3  "+Cc);
+    Dd=d % 10;
+    System.out.println("Digite 4  "+Dd); 
+    
+    System.out.println("_______________________________"); 
+    
+    if ((Aa==Dd) && (Bb==Cc)){
+    System.out.println("Los numeros son capicuas ");
+    }          
+    else
+    {
+     System.out.println("No son capicuas");
+    }
+    if (n==-1){
+     fin=0;
+    }
+    if (n>9999){
+    System.out.println("POR FAVOR DIGITE UN NUMERO MENOR A 10000");
+    
+    
+    
+    }
+    
+    
+  
+    }//fn mientras
+   
+   
+   
+   }
+   
+   
+ 
+ }
+
+//EJERCICIO 21
+
+import java.util.Scanner;
+class Taller21
+
+ {
+  public static void main(String h[])
+  {
+    
+   Scanner lea=new Scanner(System.in);
+   int numero=0,residuo=0,capicua=0,division=0,entero,numero_original;
+   System.out.println("de numero ");
+   numero_original=lea.nextInt();
+   numero=numero_original;
+   
+   System.out.println("el numero original es"+numero);
+   
+
+   while(numero>0){
+   
+   residuo=numero%10;
+   System.out.println("el ultimo digiti es "+residuo);
+   division=numero/10;
+   numero=division;
+   capicua=capicua+residuo;
+   capicua=capicua*10;
+   
+   }   
+   capicua=capicua/10;
+   
+   if (capicua==numero_original){
+   System.out.println("el numero "+numero+"es capicua");
+   
+   }
+   else
+   {
+   System.out.println("el umero "+numero+" pailas");
+   }
+   
+   
+   
+   
+   System.out.println("el digito es "+residuo);
+    
+    
+   }
+ }   
+
+//EJERCICIO 24
+
+import java.util.Scanner;
+class Taller24
+ {
+  public static void main(String h[])
+  {
+   Scanner lea=new Scanner(System.in);
+   int x,contador=1,cont_d=0,mosd;
+   System.out.println("digite un numero");
+   x=lea.nextInt();
+   while(contador<=x){
+ if(x % contador==0){
+   System.out.println("divisible entre "+contador );
+   cont_d=cont_d+1;
+   }
+   
+     contador=contador+1;
+   }
+   if(cont_d==2){
+   System.out.println("numero de divisores "+cont_d);
+   System.out.println(cont_d+" es numero primo");
+   }
+   
+  }
+ } 
+
+//EJERCICIO 25
+
+import java.util.Scanner;
+class Taller25
+
+ {
+  public static void main(String h[])
+  {
+    
+   Scanner lea=new Scanner(System.in);
+   int numero=0,residuo;
+   System.out.println("Numero de cedula");
+   numero=lea.nextInt();
+   residuo=numero%10;
+   System.out.println("El ultimo digito de numero de cedula es "+residuo);
+
+   }
+ }   
+
+//EJERCICIO 26
+
+import java.util.Scanner;
+class Taller26
+{ 
+ public static void main(String h[])
+ {
+  Scanner lea=new Scanner(System.in);
+  int par,contador=2,x;
+  System.out.println("Numero pares hasta ");
+  x=lea.nextInt();
+  while (contador<=x){
+  
+  System.out.println("Numero "+contador);
+  
+  
+  contador=contador+2;
+  }
+ }
+}
+
+//EJERCICIO 28
+
+import java.util.Scanner;
+class Taller28
+{
+ public static void main(String h[])
+ {
+  Scanner lea=new Scanner(System.in);
+  int cantidad,contador=1,cont_ap=0,cont_re=0,pro=0,repro=0;
+  double nota,nota2,nota3,nota4,nota5;
+  System.out.println("Cantidad de alumnos");
+  cantidad=lea.nextInt();
+  while (contador<=cantidad){
+  System.out.println( contador+" alumno");
+  nota=lea.nextDouble();
+  nota=lea.nextDouble();
+  nota=lea.nextDouble();
+  nota=lea.nextDouble();
+  nota=lea.nextDouble();
+  
+  if (nota>=3.0){
+  cont_ap=cont_ap+1;
+  }
+  if (nota<3.0){
+  cont_re=cont_re+1;
+  }
+  contador=contador+1;
+  }
+  if(cont_ap>=3){
+  pro=pro+1;
+  }
+     if(cont_re>=3){
+  repro=repro+1;
+  
+  }
+ 
+ System.out.println("reprobaron son  "+repro);
+ System.out.println("aprobaron son  "+pro);
+ }
+ }
+
