@@ -1,10 +1,43 @@
-entero numero
+//Taller en Lpp
+//EJERCICIO 1
+ entero base, altura, per, area
 inicio
-	numero <- 2
-	mientras numero <= 50 haga
-	llamar nueva_linea
-		escriba "NUMERO ES " , numero
-		numero <- numero + 2
-	fin mientras
+escriba "ingresar base del rectangulo: "
+lea base
+escriba "ingresar altura del rectangulo: "
+lea altura
+per<-(base*2)+(altura*2)
+area<- base*altura
+escriba "el perimetro del rectangulo es: ", per
+escriba ">>>>>>>>>>>>>>>>>><<"
+escriba "el area del rectangulo es: ", area
 fin
- 
+//EJERCICIO 2
+//EJERCICIO 3
+//EJERCICIO 4
+//EJERCICIO 5
+//EJERCICIO 6
+//EJERCICIO 7
+//EJERCICIO 8
+//EJERCICIO 9
+//EJERCICIO 10
+//EJERCICIO 11
+//EJERCICIO 12
+//EJERCICIO 13
+//EJERCICIO 14
+//EJERCICIO 15
+//EJERCICIO 16
+//EJERCICIO 17
+//EJERCICIO 18
+//EJERCICIO 19
+//EJERCICIO 20
+//EJERCICIO 21
+//EJERCICIO 22
+//EJERCICIO 23
+//EJERCICIO 24
+//EJERCICIO 25
+//EJERCICIO 26
+//EJERCICIO 27
+//EJERCICIO 28
+//EJERCICIO 29
+//EJERCICIO 30
