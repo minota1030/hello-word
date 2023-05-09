@@ -1,0 +1,450 @@
+//Taller en Lpp
+//EJERCICIO 1
+ entero base, altura, per, area
+inicio
+escriba "ingresar base del rectangulo: "
+lea base
+escriba "ingresar altura del rectangulo: "
+lea altura
+per<-(base*2)+(altura*2)
+area<- base*altura
+escriba "el perimetro del rectangulo es: ", per
+escriba ">>>>>>>>>>>>>>>>>><<"
+escriba "el area del rectangulo es: ", area
+fin
+//EJERCICIO 2
+real operacion,valor_x,valor_y,valor_z
+inicio
+valor_x <- 20
+valor_y <- 10
+valor_z <- 1
+escriba "el valor de x es: 20"
+llamar nueva_linea
+escriba "el valor de y es: 10"
+llamar nueva_linea
+escriba "el valor de z es: 1"
+llamar nueva_linea
+operacion<-(((valor_x^2)+valor_y)/3)-((valor_z*5)/20)+2^(1/2)
+escriba "el resultado de la operacion es: " , operacion
+fin
+//EJERCICIO 3
+entero edad_pedro, edad_ana, edad_alberto, edad_madre
+inicio
+escriba "ingresar edad de pedro: "
+lea edad_pedro
+edad_ana <- (4/3)*edad_pedro
+edad_alberto <- (2/3)*edad_pedro
+edad_madre <- edad_pedro + edad_ana + edad_alberto
+escriba "la edad de Ana es: ", edad_ana
+llamar nueva_linea
+escriba "la edad de Alberto es: ", edad_alberto
+llamar nueva_linea
+escriba "la edad de la madre es: ", edad_madre
+llamar nueva_linea
+escriba "la edad de Pedro es: ", edad_pedro
+fin
+
+//EJERCICIO 5,MAS CORTO
+real sal_bruto , ret_fuente, sal_neto, sal_base
+inicio
+sal_bruto<-5000*4
+ret_fuente<-(sal_bruto*12.5)/100
+sal_neto<-sal_bruto-ret_fuente
+escriba "el salario bruto es :" ,sal_bruto
+llamar nueva_linea
+escriba  " la retencion de la fuenete es:" ,ret_fuente
+llamar nueva_linea
+escriba  " el salario neto es:" , sal_neto
+fin
+//EJERCICIO 5
+real sal_bruto , ret_fuente, sal_neto, sal_base
+inicio
+sal_bruto<-5000*4
+ret_fuente<-(sal_bruto*12.5)/100
+sal_neto<-sal_bruto-ret_fuente
+escriba "el salario bruto es :" ,sal_bruto
+llamar nueva_linea
+escriba  " la retencion de la fuenete es:" ,ret_fuente
+llamar nueva_linea
+escriba  " el salario neto es:" , sal_neto
+fin
+//EJERCICIO 6
+real num_neg , num_pos , calc
+inicio
+escriba "ingresar un numero negativo: "
+lea num_neg
+si(num_neg > 0)
+entonces 
+escriba "Debe ingresar un numero menor de cero"
+sino 
+calc<- num_neg/(-1)
+escriba "el numero ingresado en positivo es: ", calc
+fin si
+fin
+//EJERCICIO 7
+real pi,area, lon_circ, radio
+inicio
+pi<-3.1416
+escriba "ingresar el radio del circulo: "
+lea radio
+area<- pi*radio^2
+lon_circ<-(2*pi)*radio
+escriba "el area del circulo es: ",area
+llamar nueva_linea
+escriba "la longitud de circunferencia es: ",lon_circ
+fin
+
+//EJERCICIO 8
+cadena [30] nombre, codigo
+real sal_bruto,sal_neto,ht_m,rf,vht,total
+inicio 
+escriba "ingrese el nombre del trabajador :  " 
+lea nombre
+escriba "ingrese codigo del trabajador:  "
+lea codigo
+escriba "ingrese las horas trabajadas en el mes: "
+lea ht_m
+escriba "ingrese valor de pago por hora:"
+lea vht
+escriba "ingresar retencion en la fuente: "
+lea rf
+sal_bruto<-ht_m*vht
+total<-(sal_bruto*rf)/100
+sal_neto<-sal_bruto-total
+escriba "el nombre de trabajador es: ", nombre
+llamar nueva_linea
+escriba "el codigo del trabajador es: ", codigo
+llamar nueva_linea
+escriba "el salario bruto del trabajador es: ", sal_bruto
+llamar nueva_linea
+escriba "el salario neto del trabajador es: ", sal_neto
+llamar nueva_linea
+fin
+//EJERCICIO 9
+real invercion,ganancia,calculo
+inicio
+escriba " ingrese valor de capital o invercion : "
+lea invercion 
+calculo<-(invercion*2)/100
+ganancia<-invercion+calculo
+escriba "la invercion fue de: " , invercion
+llamar nueva_linea
+escriba " la gancia del invercionista  es : " , ganancia
+
+fin
+//EJERCICIO 10
+real  valor_compra , total, operacion,total_pagar
+inicio
+escriba "ingrese el valor total de la compra:  "
+lea total 
+operacion<-(total*15)/100
+total_pagar<-total-operacion
+
+
+escriba "el valor de la ganacia por la compa  es: " , operacion
+llamar nueva_linea
+escriba " total a pagar: " , total_pagar
+
+fin
+//EJERCICIO 11
+real np1,np2,np3 ,exam_final,trab_final,prom_par,porc_prom, por_exf,por_trabf,calif_final
+inicio 
+escriba "ingrese nota del priemer parcial : "
+lea np1
+escriba "ingrese nota del segundo parcial : "
+lea np2
+escriba "ingrese nota del tercer parcial :  "
+lea np3
+prom_par<-(np1+np2+np3)/3
+porc_prom<-(prom_par*55)/100
+llamar nueva_linea
+escriba "ingrese nota del examen final : "
+lea exam_final
+por_exf<-(exam_final*30)/100
+llamar nueva_linea
+escriba "ingrese nota del trabajo final: "
+lea trab_final
+por_trabf<-(trab_final*15)/100
+llamar nueva_linea
+calif_final<-porc_prom+por_exf+por_trabf
+llamar nueva_linea
+escriba "la calificacion final del alumnmo es:" , calif_final
+llamar nueva_linea
+fin
+
+//EJERCICIO 12
+real can_dolar , cant_pesos, transformacion
+inicio
+escriba "ingrese valor en pesos : "
+lea cant_pesos
+escriba  "ingrese valor actual del dolar :" 
+lea can_dolar
+transformacion<-cant_pesos/can_dolar
+escriba " la transformacion de pesos a dolares dio lugar a  : " , transformacion , "dolares"
+fin
+
+//EJERCICIO 13
+real volumen ,temperatura, masa_aire ,presion
+inicio
+escriba "valor de presion:  "
+lea presion
+escriba " ingrese  valor de temperatura : "
+lea temperatura
+escriba "ingrese valor del volumen : "
+lea volumen
+masa_aire<-(presion * volumen)/(0.37 * (temperatura + 460))
+escriba " el valor total de la masa calculada en este caso es: " , masa_aire
+fin
+
+//EJERCICIO 14
+real pulsaciones, edad , pps
+inicio
+escriba " ingrese su edad o la de otra persona : "
+lea edad 
+pps<-(220-edad)/10
+escriba  "segun la edad las pulsaciones por 10 segundos deben ser semejantes a : " , pps
+fin
+
+//EJERCICIO 15
+real sal_obrero ,incremento, operacion 
+inicio
+escriba "ingrese valor del salario anterior del  obrero :"
+lea sal_obrero
+operacion<-sal_obrero+(sal_obrero*25)/100 
+escriba "el salario con incremento del obrero es: " , operacion
+fin
+
+//EJERCICIO 16
+real ginecol, pediat, traumatol, p_gin, p_p,p_t,v_p
+inicio
+escriba "ingrese valor de ginecologia:"
+lea ginecol
+escriba "el valor  de pediatria: "
+lea pediat
+escriba "el valor de traumatologia ($) : "
+lea traumatol
+p_gin<-ginecol+(ginecol*40)/100
+p_p<-pediat+(pediat*30)/100
+p_t<-traumatol+(traumatol*30)/100
+v_p<-p_gin+p_p+p_t
+escriba "el dinero que recibira la ginecologia es:", p_gin
+llamar nueva_linea
+escriba "el dinero que recibira pediatria es : " , p_p
+llamar nueva_linea
+escriba "el dinero que recibira traumatologia es: " ,p_t
+llamar nueva_linea
+escriba "el valor total porciento es: " , v_p
+fin
+//EJERCICIO 17
+real val_prod, val_productodegan,operacion
+inicio escriba "ingrese el valor del producto original: "
+lea val_prod
+operacion<-val_prod+(val_prod*30)/100
+escriba "el comprador vedio o va avender su producto por un valor de : " , operacion
+fin
+//EJERCICIO 18
+real t_lunes,t_miercoles,t_viernes,recorrido,ruta,operacion_t,operacion
+inicio
+escriba "ingrese cuanto marco el cronometro el dia lunes al terminar su recorrido : "
+lea t_lunes
+escriba "ingrese cuanto marco el cronometro el dia miercoles al terminar su recorrido : "
+lea t_miercoles
+escriba "ingrese cuanto marco el cronometro el dia viernes al terminar su recorrido : "
+lea t_viernes
+operacion<-(t_lunes+t_miercoles+t_viernes)/3
+operacion_t<-t_lunes+t_miercoles+t_viernes
+llamar nueva_linea
+escriba "en estos 3 dias de la semana recorrio 3  veces la misma ruta por un total de: "  ,operacion_t
+llamar nueva_linea
+escriba " el promedio del recorrido de la ruta en una semana cualesquiera es : " ,operacion
+fin
+//EJERCICIO 19
+real persona_1,persona_2,persona_3, calculo, operacion_1,operacion_2,operacion_3,porciento
+inicio
+escriba "ingresa valor en dinero que invirtio la persona 1 :"
+lea persona_1
+escriba "ingresa valor en dinero que invirtio la persona 2 :"
+lea persona_2
+escriba "ingresa valor en dinero que invirtio la persona 3 :"
+lea persona_3
+calculo<-persona_1+persona_2+persona_3
+operacion_1<-(calculo*persona_1)/100
+operacion_2<-(calculo*persona_2)/100 
+operacion_3<-(calculo*persona_3)/100
+escriba "la persona numero 1 invirtio el :",operacion_1
+llamar nueva_linea 
+escriba "la persona numero 2 invirtio el :",operacion_2
+llamar nueva_linea 
+escriba "la persona numero 3 invirtio el :",operacion_3
+fin
+//EJERCICIO 20
+real  m_ex1,m_t1,m_t2,m_t3,f_ex1,f_t1,f_t2,q_ex1,q_t1,q_t2,q_t3,operacion_m1,operacion_m2,promedio_mat,operacion_f1,operacion_f2,promedio_fis,operacion_q1,operacion_q2,promedio_quim
+inicio
+escriba "ingrese nota de  examen de matematicas: "
+lea m_ex1
+escriba "ingrese nota de la primera tarea : "
+lea m_t1
+escriba "ingrese nota de la segunda  tarea : "
+lea m_t2
+escriba "ingrese nota de la tercera tarea : "
+lea m_t3
+llamar nueva_linea
+escriba "ingrese la nota del examen de fisica: "
+lea f_ex1
+escriba " ingrese nota de la primer tarea :"
+lea f_t1
+escriba " ingrese nota de la segunda tarea :"
+lea f_t2
+llamar nueva_linea
+escriba "ingrese nota del primer examen de quimica : "
+lea q_ex1
+escriba "ingrese nota de la primera tarea : "
+lea q_t1
+escriba "ingrese nota de la segunda tarea : "
+lea q_t2
+escriba "ingrese nota de la tercera tarea : "
+lea q_t2
+llamar nueva_linea
+operacion_m1<-m_ex1*90/100
+operacion_m2<-(((m_t1+m_t2+m_t3)/3)*10)/100
+promedio_mat<-operacion_m1+operacion_m2
+llamar nueva_linea
+operacion_f1<-(f_ex1*80)/100
+operacion_f2<-(((f_t1+f_t2)/2)*20)/100
+promedio_fis<-operacion_f1+operacion_f2
+llamar nueva_linea
+operacion_q1<-(q_ex1*85)/100
+operacion_q2<-(((q_t1+q_t2+q_t3)/3)*15)/100
+promedio_quim<-operacion_q1+operacion_q2
+llamar nueva_linea
+escriba " el promedio de la materia matematicas es : " , promedio_mat
+llamar nueva_linea
+escriba " el promedio de la materia de fisica  es : " , promedio_fis
+llamar nueva_linea
+escriba " el promedio de la materia quimica  es : " , promedio_quim
+fin
+
+fin
+//EJERCICIO 21
+entero  km,hrs,operacion
+inicio
+km<-160
+hrs<-5
+operacion<-km/hrs
+escriba "la velocidad del auto por hora fue : " , operacion
+fin
+
+//EJERCICIO 22
+entero  km,hrs,operacion
+inicio
+km<-160
+hrs<-5
+operacion<-km/hrs
+escriba "la velocidad del auto por hora fue : " , operacion
+fin
+//EJERCICIO 23
+real lado, super
+inicio
+escriba "Ingresas un lado del cudrado"
+lea lado
+super<- lado*lado
+escriba "La superficie del cuadrado es: ",super
+fin
+//EJERCICIO 24
+real gf, gc
+inicio
+escriba "ingresar el valor en grados Farenheit "
+lea gf
+gc<- 5/9*(gf-32)
+escriba "El valor en grados centigrados es: ",gc
+fin
+//EJERCICIO 25
+real ladoA, ladoB, hip
+inicio
+escriba "Ingresar lado A de triangulo "
+lea ladoA
+escriba "Ingresar lado B de triangulo "
+lea ladoB
+hip<- (ladoA^2 + ladoB^2)^(1/2)
+escriba "La hipotenusa es: ",hip
+fin
+//EJERCICIO 26
+real grados, rad
+inicio
+escriba "ingresar el nuemero de grados: "
+lea grados
+rad<- (grados*3.1416)/180
+escriba "El valor en radianes es: ",rad
+fin
+//EJERCICIO 27
+real cp, af, aa, ti, preArt
+inicio
+escriba "ingresar el costo del producto : "
+lea cp
+escriba "ingresar el a�o futuro : "
+lea af
+escriba "ingresar el a�o actual : "
+lea aa
+escriba "ingresar tasa de interes anual: "
+lea ti
+preArt<- cp*(1-ti)^(af-aa)
+escriba "el precio el articulo enun a�o futuro es" , preArt
+fin
+//EJERCICIO 28
+real x1, x2, y1, y2, distancia
+inicio
+escriba "Ingresar x1: "
+lea x1
+escriba "Ingresar x2: "
+lea x2
+escriba "Ingresar y1: "
+lea y1
+escriba "Ingresar y2: "
+lea y2
+distancia<- ((x1^2 - x2^2) + (y1^2 - y2^2))^(1/2)
+escriba "La distancia entre los dos puntos es : ", distancia
+fin
+//EJERCICIO 29
+real costoArt, peso, total
+inicio
+escriba "Ingresar el costo del articulo por kilo: "
+lea costoArt
+escriba "ingresar peso total del articulo : "
+lea peso
+total<- peso*costoArt
+escriba "el costo total del articulo es : ", total
+fin
+//EJERCICIO 30
+real m, v, ec
+inicio
+escriba "Ingrese M : "
+lea m
+escriba "Ingrese V : "
+lea v
+ec<- (M*V^2)/2
+escriba "La energia cinetica del cuerpo en movimiento es : ", ec
+fin
+//EJERCICIO 31
+entero m2, m5, m10, m20, m50, m100, vm2, vm5, vm10, vm20, vm50, vm100, vt
+inicio
+escriba "Ingresar el numero de monedas de 2 : "
+lea m2
+escriba "Ingresar el numero de monedas de 5 : "
+lea m5
+escriba "Ingresar el numero de monedas de 10 : "
+lea m10
+escriba "Ingresar el numero de monedas de 20 : "
+lea m20
+escriba "Ingresar el numero de monedas de 50 : "
+lea m50
+escriba "Ingresar el numero de monedas de 100 : "
+lea m100
+vm2<- m2*2
+vm5<- m5*5
+vm10<- m10*10
+vm20<- m20*20
+vm50<- m50*50
+vm100<- m100*100
+vt<-vm2+vm5+vm10+vm20+vm50+vm100
+escriba "El valor obtenido por el total de las monedas es : ", vt
+fin
